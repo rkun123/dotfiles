@@ -1,0 +1,707 @@
+uname -a
+Linux Azunyan 5.1.15-arch1-1-ARCH #1 SMP PREEMPT Tue Jun 25 04:49:39 UTC 2019 x86_64 GNU/Linux
+
+
+NVIM v0.3.7
+Build type: Release
+LuaJIT 2.0.5
+Compilation: /usr/bin/cc -march=x86-64 -mtune=generic -O2 -pipe -fno-plt -Wconversion -O2 -DNDEBUG -DMIN_LOG_LEVEL=3 -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 -Wimplicit-fallthrough -Wvla -fstack-protector-strong -fdiagnostics-color=auto -Wno-array-bounds -DINCLUDE_GENERATED_DECLARATIONS -D_GNU_SOURCE -DNVIM_MSGPACK_HAS_FLOAT32 -DNVIM_UNIBI_HAS_VAR_FROM -I/build/neovim/src/build/config -I/build/neovim/src/neovim-0.3.7/src -I/usr/include -I/build/neovim/src/build/src/nvim/auto -I/build/neovim/src/build/include
+Compiled by builduser
+
+Features: +acl +iconv +jemalloc +tui 
+See ":help feature-compile"
+
+      システム vimrc: "$VIM/sysinit.vim"
+       省略時の $VIM: "/usr/share/nvim"
+
+Run :checkhealth for more info
+--- Directories and Files ---
+$VIM = "/usr/share/nvim"
+directory "/usr/share/nvim" exists
+$VIMRUNTIME = "/usr/share/nvim/runtime"
+directory "/usr/share/nvim/runtime" exists
+"/usr/share/nvim/runtime/doc/help.txt" is readable
+"/usr/share/nvim/runtime/doc/tags" is readable
+"/usr/share/nvim/runtime/menu.vim" is readable
+"/usr/share/nvim/runtime/filetype.vim" is readable
+"/usr/share/nvim/runtime/syntax/synload.vim" is readable
+--- Scripts sourced ---
+  1: /etc/xdg/nvim/sysinit.vim
+  2: /usr/share/nvim/archlinux.vim
+  3: ~/.config/nvim/init.vim
+  4: ~/.cache/dein/repos/github.com/Shougo/dein.vim/autoload/dein.vim
+  5: ~/.cache/dein/state_nvim.vim
+  6: /usr/share/nvim/runtime/ftoff.vim
+  7: /usr/share/nvim/runtime/filetype.vim
+  8: ~/.cache/dein/.cache/init.vim/.dein/ftdetect/ftdetect.vim
+  9: /usr/share/vim/vimfiles/ftdetect/conkyrc.vim
+ 10: /usr/share/vim/vimfiles/ftdetect/dockerfile.vim
+ 11: /usr/share/vim/vimfiles/ftdetect/meson.vim
+ 12: /usr/share/vim/vimfiles/ftdetect/vagrantfile.vim
+ 13: ~/.cache/dein/.cache/init.vim/.dein/ftplugin.vim
+ 14: /usr/share/nvim/runtime/ftplugin.vim
+ 15: /usr/share/nvim/runtime/indent.vim
+ 16: /usr/share/nvim/runtime/syntax/syntax.vim
+ 17: /usr/share/nvim/runtime/syntax/synload.vim
+ 18: /usr/share/nvim/runtime/syntax/syncolor.vim
+ 19: ~/.cache/dein/.cache/init.vim/.dein/colors/molokai.vim
+ 20: /usr/share/nvim/runtime/syntax/nosyntax.vim
+ 21: ~/.cache/dein/repos/github.com/Shougo/dein.vim/autoload/dein/autoload.vim
+ 22: ~/.cache/dein/repos/github.com/Shougo/dein.vim/autoload/dein/util.vim
+ 23: ~/.cache/dein/.cache/init.vim/.dein/unittest.vim
+ 24: /usr/share/nvim/runtime/bugreport.vim
+ 25: /usr/share/nvim/runtime/scripts.vim
+ 26: /usr/share/nvim/runtime/delmenu.vim
+ 27: /usr/share/nvim/runtime/ftplugof.vim
+ 28: /usr/share/nvim/runtime/indoff.vim
+ 29: /usr/share/nvim/runtime/macmap.vim
+ 30: /usr/share/nvim/runtime/autoload/paste.vim
+ 31: /usr/share/nvim/runtime/makemenu.vim
+ 32: /usr/share/nvim/runtime/menu.vim
+ 33: /usr/share/nvim/runtime/mswin.vim
+ 34: /usr/share/nvim/runtime/autoload/provider/clipboard.vim
+ 35: /usr/share/nvim/runtime/optwin.vim
+ 36: /usr/share/nvim/runtime/synmenu.vim
+ 37: /usr/share/vim/vimfiles/archlinux.vim
+ 38: /usr/share/nvim/runtime/ftplugin/text.vim
+ 39: /usr/share/nvim/runtime/syntax/vim.vim
+ 40: /usr/share/nvim/runtime/syntax/vim/generated.vim
+--- オプション ---
+  aleph=224           fileencoding=       modelines=5         spelllang=en
+noarabic              fileformat=unix     modifiable          spellsuggest=best
+  arabicshape       nofileignorecase    nomodified            splitbelow
+noallowrevins         filetype=vim      nomore              nosplitright
+noaltkeymap           fillchars=          mouse=              startofline
+  ambiwidth=single    fixendofline        mousemodel=popup    statusline=
+noautochdir         nofkmap               mousetime=500       suffixesadd=
+  autoindent          foldclose=          nrformats=bin,hex noswapfile
+  autoread            foldcolumn=0        number              switchbuf=
+noautowrite           foldenable          numberwidth=4       synmaxcol=3000
+noautowriteall        foldexpr=0          omnifunc=           syntax=vim
+  background=dark     foldignore=#        operatorfunc=       tabline=
+nobackup              foldlevel=0       nopaste               tabpagemax=50
+  backupcopy=auto     foldlevelstart=-1   pastetoggle=        tabstop=15
+  backupext=~         foldmethod=manual   patchexpr=          tagbsearch
+  backupskip=/tmp/*   foldminlines=1      patchmode=          tagcase=followic
+  belloff=all         foldnestmax=20    nopreserveindent      taglength=0
+nobinary              formatexpr=         previewheight=12    tagrelative
+nobomb                formatprg=        nopreviewwindow       tags=./tags;,tags
+nobreakindent       nofsync               printdevice=        tagstack
+  breakindentopt=   nogdefault            printencoding=    notermbidi
+  bufhidden=delete    guifont=            printfont=courier notermguicolors
+  buflisted           guifontset=         printmbcharset=   noterse
+  buftype=nofile      guifontwide=        printmbfont=        textwidth=0
+  cdpath=,,           helpheight=20       printoptions=       thesaurus=
+  cedit=^F            helplang=ja         prompt            notildeop
+  channel=0         nohidden              pumheight=0         timeout
+  charconvert=        history=10000       quoteescape=\       timeoutlen=1000
+nocindent           nohkmap             noreadonly          notitle
+  cinoptions=       nohkmapp              redrawtime=2000     titlelen=85
+  clipboard=          hlsearch            regexpengine=0      titleold=
+  cmdheight=1       noicon              norelativenumber      titlestring=
+  cmdwinheight=7      iconstring=         remap               ttimeout
+  colorcolumn=      noignorecase          report=2            ttimeoutlen=50
+  columns=80          iminsert=0        norevins              ttyfast
+nocompatible          imsearch=0        norightleft         noundofile
+  concealcursor=      inccommand=         ruler               undolevels=1000
+  conceallevel=0      includeexpr=        rulerformat=        undoreload=10000
+  completefunc=       incsearch           scroll=2            updatecount=200
+noconfirm             indentexpr=         scrollback=-1       updatetime=4000
+nocopyindent        noinfercase         noscrollbind          verbose=0
+  cscopepathcomp=0  noinsertmode          scrolljump=1        verbosefile=
+  cscopeprg=cscope    isprint=@,161-255   scrolloff=0         virtualedit=
+  cscopequickfix=     joinspaces        nosecure            novisualbell
+nocscoperelative      keymap=             shellcmdflag=-c     warn
+nocscopetag           keywordprg=:Man     shellpipe=| tee     wildchar=<Tab>
+  cscopetagorder=0    langmap=            shellquote=         wildcharm=0
+  cscopeverbose       langmenu=           shellredir=>        wildignore=
+nocursorbind          langnoremap         shelltemp         nowildignorecase
+nocursorcolumn      nolangremap           shellxquote=        wildmenu
+nocursorline          laststatus=2        shellxescape=       wildmode=full
+  debug=            nolazyredraw        noshiftround          wildoptions=
+nodelcombine        nolinebreak           shiftwidth=2        winaltkeys=menu
+  dictionary=         lines=24            showbreak=          winhighlight=
+nodiff                linespace=0         showcmd             window=23
+  diffexpr=         nolisp              noshowfulltag         winheight=1
+nodigraph           nolist              noshowmatch         nowinfixheight
+  eadirection=both    loadplugins         showmode          nowinfixwidth
+noedcompatible        magic               showtabline=1       winminheight=1
+  emoji               makeef=             sidescroll=1        winminwidth=1
+  encoding=utf-8      makeencoding=       sidescrolloff=0     winwidth=20
+  endofline           makeprg=make        signcolumn=auto     wrap
+  equalalways         matchtime=5       nosmartcase           wrapmargin=0
+  equalprg=           maxcombine=6        smartindent         wrapscan
+noerrorbells          maxfuncdepth=100    smarttab            write
+  eventignore=        maxmapdepth=1000    softtabstop=0     nowriteany
+noexpandtab           menuitems=25      nospell               writebackup
+noexrc                modeline            spellfile=          writedelay=0
+  backspace=indent,eol,start
+  backupdir=~/.cache/vim/backup//
+  breakat= ^I!@*-+;:,./?
+  casemap=internal,keepascii
+  cinkeys=0{,0},0),:,0#,!^F,o,O,e
+  cinwords=if,else,while,do,for,switch
+  comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+  commentstring=/*%s*/
+  complete=.,w,b,u,t
+  completeopt=menu,preview
+  cpoptions=aABceFs_
+  define=^\s*#\s*define
+  diffopt=internal,filler
+  directory=~/.cache/vim/swap//
+  display=lastline,msgsep
+  errorfile=errors.err
+  errorformat=%*[^"]"%f"%*\D%l: %m,"%f"%*\D%l: %m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c:,%-GIn file included from %f:%l:%c\,,%-GIn file included from %f:%l:%c,%-GIn file included from %f:%l,%-G%*[ ]from %f:%l:%c,%-G%*[ ]from %f:%l:,%-G%*[ ]from %f:%l\,,%-G%*[ ]from %f:%l,%f:%l:%c:%m,%f(%l):%m,%f:%l:%m,"%f"\, line %l%*\D%c%*[^ ] %m,%D%*\a[%*\d]: Entering directory %*[`']%f',%X%*\a[%*\d]: Leaving directory %*[`']%f',%D%*\a: Entering directory %*[`']%f',%X%*\a: Leaving directory %*[`']%f',%DMaking %*\a in %f,%f|%l| %m
+  fileencodings=ucs-bom,utf-8,default,latin1
+  fileformats=unix,dos
+  foldmarker={{{,}}}
+  foldopen=block,hor,mark,percent,quickfix,search,tag,undo
+  foldtext=foldtext()
+  formatoptions=tcqj
+  formatlistpat=^\s*\d\+[\]:.)}\t ]\s*
+  grepformat=%f:%l:%m,%f:%l%m,%f  %l%m
+  grepprg=grep -nH $*
+  guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20
+  helpfile=/usr/share/nvim/runtime/doc/help.txt
+  highlight=8:SpecialKey,~:EndOfBuffer,z:TermCursor,Z:TermCursorNC,@:NonText,d:Directory,e:ErrorMsg,i:IncSearch,l:Search,m:MoreMsg,M:ModeMsg,n:LineNr,N:CursorLineNr,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title,v:Visual,V:VisualNOS,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn,A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal,B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel,x:PmenuSbar,X:PmenuThumb,*:TabLine,#:TabLineSel,_:TabLineFill,!:CursorColumn,.:CursorLine,o:ColorColumn,q:QuickFixLine,0:Whitespace,I:NormalNC
+  include=^\s*#\s*include
+  indentkeys=0{,0},:,0#,!^F,o,O,e
+  isfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=
+  isident=@,48-57,_,192-255
+  iskeyword=@,48-57,_,192-255
+  keymodel=startsel,stopsel
+  lispwords=defun,define,defmacro,set!,lambda,if,case,let,flet,let*,letrec,do,do*,define-syntax,let-syntax,letrec-syntax,destructuring-bind,defpackage,defparameter,defstruct,deftype,defvar,do-all-symbols,do-external-symbols,do-symbols,dolist,dotimes,ecase,etypecase,eval-when,labels,macrolet,multiple-value-bind,multiple-value-call,multiple-value-prog1,multiple-value-setq,prog1,progv,typecase,unless,unwind-protect,when,with-input-from-string,with-open-file,with-open-stream,with-output-to-string,with-package-iterator,define-condition,handler-bind,handler-case,restart-bind,restart-case,with-simple-restart,store-value,use-value,muffle-warning,abort,continue,with-slots,with-slots*,with-accessors,with-accessors*,defclass,defmethod,print-unreadable-object
+  listchars=tab:> ,trail:-,nbsp:+
+  matchpairs=(:),{:},[:]
+  maxmempattern=1000
+  mkspellmem=460000,2000,500
+  packpath=~/.config/nvim,/etc/xdg/nvim,~/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/var/lib/snapd/desktop/nvim/site,/usr/share/nvim/runtime,/var/lib/snapd/desktop/nvim/site/after,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,~/.local/share/nvim/site/after,/etc/xdg/nvim/after,~/.config/nvim/after
+  paragraphs=IPLPPPQPP TPHPLIPpLpItpplpipbp
+  path=.,/usr/include,,
+  printexpr=system(['lpr'] + (empty(&printdevice)?[]:['-P', &printdevice]) + [v:fname_in]). delete(v:fname_in)+ v:shell_error
+  printheader=%<%f%h%m%=Page %N
+  rightleftcmd=search
+  runtimepath=~/.config/nvim,/etc/xdg/nvim,~/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/var/lib/snapd/desktop/nvim/site,~/.cache/dein/repos/github.com/Shougo/dein.vim,~/.cache/dein/.cache/init.vim/.dein,/usr/share/nvim/runtime,~/.cache/dein/.cache/init.vim/.dein/after,/var/lib/snapd/desktop/nvim/site/after,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,~/.local/share/nvim/site/after,/etc/xdg/nvim/after,~/.config/nvim/after,/usr/share/vim/vimfiles
+  scrollopt=ver,jump
+  sections=SHNHH HUnhsh
+  selection=exclusive
+  selectmode=mouse,key
+  sessionoptions=blank,buffers,curdir,folds,help,tabpages,winsize
+  shada=!,'100,<50,s10,h
+  shell=/usr/bin/zsh
+  shortmess=filnxtToOF
+  spellcapcheck=[.?!]\_[\])'"^I ]\+
+  suffixes=.bak,~,.o,.info,.swp,.aux,.bbl,.blg,.brf,.cb,.dvi,.idx,.ilg,.ind,.inx,.jpg,.log,.out,.png,.toc
+  undodir=~/.cache/vim/undo//
+  viewdir=~/.local/share/nvim/view
+  viewoptions=folds,options,cursor,curdir
+  viminfo=!,'100,<50,s10,h
+  whichwrap=b,s,<,>,[,]
+--- Autocommands ---
+optwin  BufHidden
+    option-window
+              call <SID>unload() | delfun <SID>unload
+dein  BufNew
+    *?        call dein#autoload#_on_default_event('BufNew')
+dein  BufNewFile
+    *?        call dein#autoload#_on_default_event('BufNew')
+vagrant  BufNewFile
+    Vagrantfile
+              set filetype=ruby
+nvim_terminal  BufReadCmd
+    term://*  :if !exists('b:term_title')|call termopen( matchstr(expand("<amatch>"), '\c\mterm://\%(.\{-}//\%(\d\+:\)\?\)\?\zs.*'), {'cwd': get(matchlist(expand("<amatch>"), '\c\mterm://\(.\{-}\)//'), 1, '')})|endif
+dein  BufReadPost
+    *?        call dein#autoload#_on_default_event('BufRead')
+vagrant  BufReadPost
+    Vagrantfile
+              set filetype=ruby
+optwin  BufUnload
+    option-window
+              call <SID>unload() | delfun <SID>unload
+dein  BufWritePost
+    *.vim     call dein#util#_check_vimrcs()
+    *.toml    call dein#util#_check_vimrcs()
+    vimrc     call dein#util#_check_vimrcs()
+    .vimrc    call dein#util#_check_vimrcs()
+dein  CmdUndefined
+    *         call dein#autoload#_on_pre_cmd(expand('<afile>'))
+SetupLazyloadMenus  CursorHold
+    *         call <SID>SetupLazyloadMenus() | au! SetupLazyloadMenus
+SetupLazyloadMenus  CursorHoldI
+    *         call <SID>SetupLazyloadMenus() | au! SetupLazyloadMenus
+dein  FileType
+    *?        call dein#autoload#_on_default_event('FileType')
+syntaxset  FileType
+    *         exe "set syntax=" . expand("<amatch>")
+filetypeplugin  FileType
+    *         call s:ftplugin()
+dein  FuncUndefined
+    *         call dein#autoload#_on_func(expand('<afile>'))
+SpellPopupMenu  MenuPopup
+    *         call <SID>SpellPopup()
+Syntax
+    *         call s:SynSet()
+    c         if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    cpp       if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    cs        if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    idl       if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    java      if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    php       if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+    datascript
+              if (exists('b:load_doxygen_syntax') && b:load_doxygen_syntax)^I|| (exists('g:load_doxygen_syntax') && g:load_doxygen_syntax)   | runtime! syntax/doxygen.vim | endif
+dein  VimEnter
+    *?        call dein#autoload#_on_default_event('VimEnter')
+LoadBufferMenu  VimEnter
+    *         if !exists("no_buffers_menu") | call <SID>BMShow() | endif
+              au! LoadBufferMenu
+--- Normal/Visual mode mappings ---
+   <CR>        *@<C-\><C-N>:call <SNR>35_CR()<CR>
+   <Space>     *@:call <SNR>35_Space()<CR>
+x  <C-A>       * <C-C>ggVG
+s  <C-A>       * <C-C>gggH<C-O>G
+o  <C-A>       * <C-C>gggH<C-O>G
+n  <C-A>       * gggH<C-O>G
+v  <C-C>       * "+y
+   <C-H>       * <C-W>h
+   <NL>        * <C-W>j
+   <C-K>       * <C-W>k
+   <C-L>       * <C-W>l
+   <C-Q>       * <C-V>
+v  <C-S>       * <C-C>:update<CR>
+no <C-S>       * :update<CR>
+v  <C-V>       & "-c<Esc>:call paste#Paste()<CR>
+no <C-V>         "+gP
+v  <C-X>       * "+x
+   <C-Y>       * <C-R>
+   <C-Z>       * u
+o  <C-F4>      * <C-C><C-W>c
+o  <C-Tab>     * <C-C><C-W>w
+v  <S-Insert>    <C-V>
+nv <C-F4>      * <C-W>c
+nv <C-Tab>     * <C-W>w
+no <S-Insert>    "+gP
+v  <C-Insert>  * "+y
+v  <S-Del>     * "+x
+v  <BS>        * d
+o  <D-g>         <Esc><D-g>
+v  <D-g>         <Esc><D-g>
+n  <D-g>       * n
+o  <D-f>         <Esc><D-f>
+v  <D-f>         <Esc><D-f>
+n  <D-f>       * /
+o  <D-a>         <Esc><D-a>
+v  <D-a>         <Esc><D-a>
+n  <D-a>       * :if &slm != ""|exe ":norm gggH<C-O>G"| else|exe ":norm ggVG"|endif<CR>
+v  <D-v>       & "-c<Esc>:call paste#Paste()<CR>
+n  <D-v>       * "+gP
+v  <D-c>       * "+y
+v  <D-x>       * "+x
+o  <D-z>         <Esc><D-z>
+v  <D-z>         <Esc><D-z>gv
+n  <D-z>       * u
+o  <S-D-s>       <Esc><D-s>
+v  <S-D-s>       <Esc><D-s>gv
+n  <S-D-s>     * :browse confirm saveas<CR>
+o  <D-s>         <Esc><D-s>
+v  <D-s>         <Esc><D-s>gv
+n  <D-s>       * :if expand("%") == ""|browse confirm w| else|confirm w|endif<CR>
+o  <D-w>         <Esc><D-w>
+v  <D-w>         <Esc><D-w>gv
+n  <D-w>       * :if winheight(2) < 0 | confirm enew | else | confirm close | endif<CR>
+o  <D-o>         <Esc><D-o>
+v  <D-o>         <Esc><D-o>gv
+n  <D-o>       * :browse confirm e<CR>
+o  <D-n>         <Esc><D-n>
+v  <D-n>         <Esc><D-n>gv
+n  <D-n>       * :confirm enew<CR>
+--- Insert/Command-line mode mappings ---
+i  <CR>        *@<Esc>:call <SNR>35_CR()<CR>
+c  <C-F4>      * <C-C><C-W>c
+i  <C-F4>      * <C-O><C-W>c
+c  <C-Tab>     * <C-C><C-W>w
+i  <C-Tab>     * <C-O><C-W>w
+i  <S-Insert>    <C-V>
+c  <S-Insert>    <C-R>+
+c  <D-g>         <C-C><D-g>
+i  <D-g>         <C-O><D-g>
+c  <D-f>         <C-C><D-f>
+i  <D-f>         <Esc><D-f>
+c  <D-a>         <C-C><D-a>
+i  <D-a>         <Esc><D-a>
+i  <D-v>       & <C-\><C-O>"+gP
+c  <D-v>       * <C-R>+
+c  <D-c>       * <C-Y>
+c  <D-z>         <C-C><D-z>
+i  <D-z>         <C-O><D-z>
+c  <S-D-s>       <C-C><D-s>
+i  <S-D-s>       <C-O><D-s>
+c  <D-s>         <C-C><D-s>
+i  <D-s>         <C-O><D-s>
+c  <D-w>         <C-C><D-w>
+i  <D-w>         <C-O><D-w>
+c  <D-o>         <C-C><D-o>
+i  <D-o>         <C-O><D-o>
+c  <D-n>         <C-C><D-n>
+i  <D-n>         <C-O><D-n>
+c  <C-A>       * <C-C>gggH<C-O>G
+i  <C-A>       * <C-O>gg<C-O>gH<C-O>G
+i  <C-S>       * <Esc>:update<CR>gi
+i  <C-V>       & <C-G>u<C-\><C-O>"+gP
+c  <C-V>         <C-R>+
+i  <C-Y>       * <C-O><C-R>
+i  <C-Z>       * <C-O>u
+--- Abbreviations ---
+
+短縮入力は見つかりませんでした
+--- Highlighting ---
+SpecialKey     xxx ctermfg=59 gui=italic guifg=#465457
+EndOfBuffer    xxx links to NonText
+TermCursor     xxx cterm=reverse gui=reverse
+TermCursorNC   xxx cleared
+NonText        xxx ctermfg=59 gui=bold guifg=#465457
+Directory      xxx cterm=bold ctermfg=118 gui=bold guifg=#A6E22E
+ErrorMsg       xxx cterm=bold ctermfg=199 ctermbg=16 gui=bold guifg=#F92672
+                   guibg=#232526
+IncSearch      xxx cterm=reverse ctermfg=193 ctermbg=16 gui=reverse
+                   guifg=#C4BE89 guibg=#000000
+Search         xxx ctermfg=0 ctermbg=222 guifg=#000000 guibg=#FFE792
+MoreMsg        xxx ctermfg=229 gui=bold guifg=#E6DB74
+ModeMsg        xxx cterm=bold ctermfg=229 gui=bold guifg=#E6DB74
+LineNr         xxx ctermfg=250 ctermbg=236 guifg=#465457 guibg=#232526
+CursorLineNr   xxx ctermfg=208 guifg=#FD971F
+Question       xxx ctermfg=81 gui=bold guifg=#66D9EF
+StatusLine     xxx cterm=bold,reverse ctermfg=238 ctermbg=253 gui=bold,reverse
+                   guifg=#455354 guibg=fg
+StatusLineNC   xxx cterm=reverse ctermfg=244 ctermbg=232 gui=reverse
+                   guifg=#808080 guibg=#080808
+VertSplit      xxx cterm=bold ctermfg=244 ctermbg=232 gui=bold guifg=#808080
+                   guibg=#080808
+Title          xxx ctermfg=166 gui=bold guifg=#ef5939
+Visual         xxx ctermbg=235 guibg=#403D3D
+VisualNC       xxx cleared
+WarningMsg     xxx cterm=bold ctermfg=231 ctermbg=238 gui=bold guifg=#FFFFFF
+                   guibg=#333333
+WildMenu       xxx ctermfg=81 ctermbg=16 guifg=#66D9EF guibg=#000000
+Folded         xxx ctermfg=67 ctermbg=16 guifg=#465457 guibg=#000000
+FoldColumn     xxx ctermfg=67 ctermbg=16 guifg=#465457 guibg=#000000
+DiffAdd        xxx ctermbg=24 guibg=#13354A
+DiffChange     xxx ctermfg=181 ctermbg=239 guifg=#89807D guibg=#4C4745
+DiffDelete     xxx ctermfg=162 ctermbg=53 gui=bold guifg=#960050 guibg=#1E0010
+DiffText       xxx cterm=bold ctermbg=102 gui=bold,italic guibg=#4C4745
+SignColumn     xxx ctermfg=118 ctermbg=235 guifg=#A6E22E guibg=#232526
+Conceal        xxx ctermfg=7 ctermbg=242 guifg=LightGrey guibg=DarkGrey
+SpellBad       xxx ctermbg=52 gui=undercurl guisp=#FF0000
+SpellCap       xxx ctermbg=17 gui=undercurl guisp=#7070F0
+SpellRare      xxx cterm=reverse gui=undercurl guisp=#FFFFFF
+SpellLocal     xxx ctermbg=17 gui=undercurl guisp=#70F0F0
+Pmenu          xxx ctermfg=81 ctermbg=16 guifg=#66D9EF guibg=#000000
+PmenuSel       xxx ctermfg=255 ctermbg=242 guibg=#808080
+PmenuSbar      xxx ctermbg=232 guibg=#080808
+PmenuThumb     xxx ctermfg=81 ctermbg=15 guifg=#66D9EF guibg=White
+TabLine        xxx cterm=underline ctermfg=15 ctermbg=242 guifg=#808080
+                   guibg=#1B1D1E
+TabLineSel     xxx cterm=bold gui=bold
+TabLineFill    xxx cterm=reverse gui=reverse guifg=#1B1D1E guibg=#1B1D1E
+CursorColumn   xxx ctermbg=236 guibg=#293739
+CursorLine     xxx ctermbg=234 guibg=#293739
+ColorColumn    xxx ctermbg=236 guibg=#232526
+QuickFixLine   xxx links to Search
+Whitespace     xxx links to NonText
+NormalNC       xxx cleared
+MsgSeparator   xxx links to StatusLine
+Cursor         xxx ctermfg=16 ctermbg=253 guifg=#000000 guibg=#F8F8F0
+lCursor        xxx guifg=bg guibg=fg
+Substitute     xxx links to Search
+MatchParen     xxx cterm=bold ctermfg=233 ctermbg=208 gui=bold guifg=#000000
+                   guibg=#FD971F
+Normal         xxx ctermfg=252 ctermbg=233 guifg=#F8F8F2 guibg=#1B1D1E
+NvimInternalError xxx ctermfg=9 ctermbg=9 guifg=Red guibg=Red
+NvimAssignment xxx links to Operator
+Operator       xxx ctermfg=161 guifg=#F92672
+NvimPlainAssignment xxx links to NvimAssignment
+NvimAugmentedAssignment xxx links to NvimAssignment
+NvimAssignmentWithAddition xxx links to NvimAugmentedAssignment
+NvimAssignmentWithSubtraction xxx links to NvimAugmentedAssignment
+NvimAssignmentWithConcatenation xxx links to NvimAugmentedAssignment
+NvimOperator   xxx links to Operator
+NvimUnaryOperator xxx links to NvimOperator
+NvimUnaryPlus  xxx links to NvimUnaryOperator
+NvimUnaryMinus xxx links to NvimUnaryOperator
+NvimNot        xxx links to NvimUnaryOperator
+NvimBinaryOperator xxx links to NvimOperator
+NvimComparison xxx links to NvimBinaryOperator
+NvimComparisonModifier xxx links to NvimComparison
+NvimBinaryPlus xxx links to NvimBinaryOperator
+NvimBinaryMinus xxx links to NvimBinaryOperator
+NvimConcat     xxx links to NvimBinaryOperator
+NvimConcatOrSubscript xxx links to NvimConcat
+NvimOr         xxx links to NvimBinaryOperator
+NvimAnd        xxx links to NvimBinaryOperator
+NvimMultiplication xxx links to NvimBinaryOperator
+NvimDivision   xxx links to NvimBinaryOperator
+NvimMod        xxx links to NvimBinaryOperator
+NvimTernary    xxx links to NvimOperator
+NvimTernaryColon xxx links to NvimTernary
+NvimParenthesis xxx links to Delimiter
+Delimiter      xxx ctermfg=241 guifg=#8F8F8F
+NvimLambda     xxx links to NvimParenthesis
+NvimNestingParenthesis xxx links to NvimParenthesis
+NvimCallingParenthesis xxx links to NvimParenthesis
+NvimSubscript  xxx links to NvimParenthesis
+NvimSubscriptBracket xxx links to NvimSubscript
+NvimSubscriptColon xxx links to NvimSubscript
+NvimCurly      xxx links to NvimSubscript
+NvimContainer  xxx links to NvimParenthesis
+NvimDict       xxx links to NvimContainer
+NvimList       xxx links to NvimContainer
+NvimIdentifier xxx links to Identifier
+Identifier     xxx ctermfg=208 guifg=#FD971F
+NvimIdentifierScope xxx links to NvimIdentifier
+NvimIdentifierScopeDelimiter xxx links to NvimIdentifier
+NvimIdentifierName xxx links to NvimIdentifier
+NvimIdentifierKey xxx links to NvimIdentifier
+NvimColon      xxx links to Delimiter
+NvimComma      xxx links to Delimiter
+NvimArrow      xxx links to Delimiter
+NvimRegister   xxx links to SpecialChar
+SpecialChar    xxx cterm=bold ctermfg=161 gui=bold guifg=#F92672
+NvimNumber     xxx links to Number
+Number         xxx ctermfg=135 guifg=#AE81FF
+NvimFloat      xxx links to NvimNumber
+NvimNumberPrefix xxx links to Type
+Type           xxx ctermfg=81 guifg=#66D9EF
+NvimOptionSigil xxx links to Type
+NvimOptionName xxx links to NvimIdentifier
+NvimOptionScope xxx links to NvimIdentifierScope
+NvimOptionScopeDelimiter xxx links to NvimIdentifierScopeDelimiter
+NvimEnvironmentSigil xxx links to NvimOptionSigil
+NvimEnvironmentName xxx links to NvimIdentifier
+NvimString     xxx links to String
+String         xxx ctermfg=144 guifg=#E6DB74
+NvimStringBody xxx links to NvimString
+NvimStringQuote xxx links to NvimString
+NvimStringSpecial xxx links to SpecialChar
+NvimSingleQuote xxx links to NvimStringQuote
+NvimSingleQuotedBody xxx links to NvimStringBody
+NvimSingleQuotedQuote xxx links to NvimStringSpecial
+NvimDoubleQuote xxx links to NvimStringQuote
+NvimDoubleQuotedBody xxx links to NvimStringBody
+NvimDoubleQuotedEscape xxx links to NvimStringSpecial
+NvimFigureBrace xxx links to NvimInternalError
+NvimSingleQuotedUnknownEscape xxx links to NvimInternalError
+NvimSpacing    xxx links to Normal
+NvimInvalidSingleQuotedUnknownEscape xxx links to NvimInternalError
+NvimInvalid    xxx links to Error
+Error          xxx ctermfg=219 ctermbg=89 guifg=#E6DB74 guibg=#1E0010
+NvimInvalidAssignment xxx links to NvimInvalid
+NvimInvalidPlainAssignment xxx links to NvimInvalidAssignment
+NvimInvalidAugmentedAssignment xxx links to NvimInvalidAssignment
+NvimInvalidAssignmentWithAddition xxx links to NvimInvalidAugmentedAssignment
+NvimInvalidAssignmentWithSubtraction xxx links to NvimInvalidAugmentedAssignment
+NvimInvalidAssignmentWithConcatenation xxx links to NvimInvalidAugmentedAssignment
+NvimInvalidOperator xxx links to NvimInvalid
+NvimInvalidUnaryOperator xxx links to NvimInvalidOperator
+NvimInvalidUnaryPlus xxx links to NvimInvalidUnaryOperator
+NvimInvalidUnaryMinus xxx links to NvimInvalidUnaryOperator
+NvimInvalidNot xxx links to NvimInvalidUnaryOperator
+NvimInvalidBinaryOperator xxx links to NvimInvalidOperator
+NvimInvalidComparison xxx links to NvimInvalidBinaryOperator
+NvimInvalidComparisonModifier xxx links to NvimInvalidComparison
+NvimInvalidBinaryPlus xxx links to NvimInvalidBinaryOperator
+NvimInvalidBinaryMinus xxx links to NvimInvalidBinaryOperator
+NvimInvalidConcat xxx links to NvimInvalidBinaryOperator
+NvimInvalidConcatOrSubscript xxx links to NvimInvalidConcat
+NvimInvalidOr  xxx links to NvimInvalidBinaryOperator
+NvimInvalidAnd xxx links to NvimInvalidBinaryOperator
+NvimInvalidMultiplication xxx links to NvimInvalidBinaryOperator
+NvimInvalidDivision xxx links to NvimInvalidBinaryOperator
+NvimInvalidMod xxx links to NvimInvalidBinaryOperator
+NvimInvalidTernary xxx links to NvimInvalidOperator
+NvimInvalidTernaryColon xxx links to NvimInvalidTernary
+NvimInvalidDelimiter xxx links to NvimInvalid
+NvimInvalidParenthesis xxx links to NvimInvalidDelimiter
+NvimInvalidLambda xxx links to NvimInvalidParenthesis
+NvimInvalidNestingParenthesis xxx links to NvimInvalidParenthesis
+NvimInvalidCallingParenthesis xxx links to NvimInvalidParenthesis
+NvimInvalidSubscript xxx links to NvimInvalidParenthesis
+NvimInvalidSubscriptBracket xxx links to NvimInvalidSubscript
+NvimInvalidSubscriptColon xxx links to NvimInvalidSubscript
+NvimInvalidCurly xxx links to NvimInvalidSubscript
+NvimInvalidContainer xxx links to NvimInvalidParenthesis
+NvimInvalidDict xxx links to NvimInvalidContainer
+NvimInvalidList xxx links to NvimInvalidContainer
+NvimInvalidValue xxx links to NvimInvalid
+NvimInvalidIdentifier xxx links to NvimInvalidValue
+NvimInvalidIdentifierScope xxx links to NvimInvalidIdentifier
+NvimInvalidIdentifierScopeDelimiter xxx links to NvimInvalidIdentifier
+NvimInvalidIdentifierName xxx links to NvimInvalidIdentifier
+NvimInvalidIdentifierKey xxx links to NvimInvalidIdentifier
+NvimInvalidColon xxx links to NvimInvalidDelimiter
+NvimInvalidComma xxx links to NvimInvalidDelimiter
+NvimInvalidArrow xxx links to NvimInvalidDelimiter
+NvimInvalidRegister xxx links to NvimInvalidValue
+NvimInvalidNumber xxx links to NvimInvalidValue
+NvimInvalidFloat xxx links to NvimInvalidNumber
+NvimInvalidNumberPrefix xxx links to NvimInvalidNumber
+NvimInvalidOptionSigil xxx links to NvimInvalidIdentifier
+NvimInvalidOptionName xxx links to NvimInvalidIdentifier
+NvimInvalidOptionScope xxx links to NvimInvalidIdentifierScope
+NvimInvalidOptionScopeDelimiter xxx links to NvimInvalidIdentifierScopeDelimiter
+NvimInvalidEnvironmentSigil xxx links to NvimInvalidOptionSigil
+NvimInvalidEnvironmentName xxx links to NvimInvalidIdentifier
+NvimInvalidString xxx links to NvimInvalidValue
+NvimInvalidStringBody xxx links to NvimStringBody
+NvimInvalidStringQuote xxx links to NvimInvalidString
+NvimInvalidStringSpecial xxx links to NvimStringSpecial
+NvimInvalidSingleQuote xxx links to NvimInvalidStringQuote
+NvimInvalidSingleQuotedBody xxx links to NvimInvalidStringBody
+NvimInvalidSingleQuotedQuote xxx links to NvimInvalidStringSpecial
+NvimInvalidDoubleQuote xxx links to NvimInvalidStringQuote
+NvimInvalidDoubleQuotedBody xxx links to NvimInvalidStringBody
+NvimInvalidDoubleQuotedEscape xxx links to NvimInvalidStringSpecial
+NvimInvalidDoubleQuotedUnknownEscape xxx links to NvimInvalidValue
+NvimInvalidFigureBrace xxx links to NvimInvalidDelimiter
+NvimInvalidSpacing xxx links to ErrorMsg
+NvimDoubleQuotedUnknownEscape xxx links to NvimInvalidValue
+Comment        xxx ctermfg=59 guifg=#7E8E91
+Constant       xxx cterm=bold ctermfg=135 gui=bold guifg=#AE81FF
+Special        xxx ctermfg=81 gui=italic guifg=#66D9EF guibg=bg
+Statement      xxx cterm=bold ctermfg=161 gui=bold guifg=#F92672
+PreProc        xxx ctermfg=118 guifg=#A6E22E
+Underlined     xxx cterm=underline ctermfg=244 gui=underline guifg=#808080
+Ignore         xxx ctermfg=244 ctermbg=232 guifg=#808080 guibg=bg
+Todo           xxx cterm=bold ctermfg=231 ctermbg=232 gui=bold guifg=#FFFFFF
+                   guibg=bg
+Character      xxx ctermfg=144 guifg=#E6DB74
+Boolean        xxx ctermfg=135 guifg=#AE81FF
+Float          xxx ctermfg=135 guifg=#AE81FF
+Function       xxx ctermfg=118 guifg=#A6E22E
+Conditional    xxx cterm=bold ctermfg=161 gui=bold guifg=#F92672
+Repeat         xxx cterm=bold ctermfg=161 gui=bold guifg=#F92672
+Label          xxx ctermfg=229 guifg=#E6DB74
+Keyword        xxx cterm=bold ctermfg=161 gui=bold guifg=#F92672
+Exception      xxx cterm=bold ctermfg=118 gui=bold guifg=#A6E22E
+Include        xxx links to PreProc
+Define         xxx ctermfg=81 guifg=#66D9EF
+Macro          xxx ctermfg=193 gui=italic guifg=#C4BE89
+PreCondit      xxx cterm=bold ctermfg=118 gui=bold guifg=#A6E22E
+StorageClass   xxx ctermfg=208 gui=italic guifg=#FD971F
+Structure      xxx ctermfg=81 guifg=#66D9EF
+Typedef        xxx ctermfg=81 guifg=#66D9EF
+Tag            xxx ctermfg=161 gui=italic guifg=#F92672
+SpecialComment xxx cterm=bold ctermfg=245 gui=bold guifg=#7E8E91
+Debug          xxx cterm=bold ctermfg=225 gui=bold guifg=#BCA3A3
+iCursor        xxx guifg=#000000 guibg=#F8F8F0
+VisualNOS      xxx ctermbg=238 guibg=#403D3D
+optwinHeader   xxx links to Title
+optwinComment  xxx links to Comment
+optwinName     xxx links to Identifier
+--- Variables ---
+dein#_runtime_path     /home/caseinna/.cache/dein/.cache/init.vim/.dein
+Tex_DefaultTargetFormat  pdf
+Tex_MultipleCompileFormats  dvi,pdf
+Tex_BibtexFlavor       upbibtex
+dein#plugin           {}
+dein#_merged_length   #3
+ycm_autoclose_preview_window_after_insertion #1
+dein#_progname         nvim
+dein#_is_sudo         #0
+colors_name            molokai
+did_load_ftplugin     #1
+did_install_syntax_menu #1
+dein#_cache_path       /home/caseinna/.cache/dein/.cache/init.vim
+dein#_init_runtimepath  /home/caseinna/.config/nvim,/etc/xdg/nvim,/home/caseinna/.local/share/nvim/site,/usr/local/share/nvim/site,/usr/share/nvim/site,/var/lib/snapd/desktop/nvim/site,/usr/share/nvim/runtime,/var/lib/snapd/desktop/nvim/site/after,/usr/share/nvim/site/after,/usr/local/share/nvim/site/after,/home/caseinna/.local/share/nvim/site/after,/etc/xdg/nvim/after,/home/caseinna/.config/nvim/after,/usr/share/vim/vimfiles,/home/caseinna/.cache/dein/repos/github.com/Shougo/dein.vim
+Tex_UseEditorSettingInDVIViewer #1
+did_optwin_syntax_inits #1
+ycm_min_num_of_chars_for_completion #3
+Imap_StickyPlaceHolders #0
+Tex_MakeIndexFlavor    upmendex $*.idx
+dein#_ftplugin        {}
+dein#_base_path        /home/caseinna/.cache/dein
+dein#_off1             
+dein#_off2             
+Tex_FormatDependency_pdf  pdf
+syntax_on             #1
+bmenu_priority        #60
+Imap_DeleteEmptyPlaceHolders #1
+langonly               ja
+ftplugin              {}
+Tex_ViewRule_pdf       xdg-open
+bmenu_max_pathlen     #35
+did_install_default_menus #1
+dein#_event_plugins   {}
+tex_flavor             latex
+more_save             #1
+buf                   #3
+dein#_block_level     #0
+dein#_plugins         {'molokai': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/tomasr/molokai', 'path': '/home/caseinna/.cache/dein/repos/github.com/tomasr/molokai', 'repo': 'tomasr/molokai', 'normalized_name': 'molokai', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'molokai'}, 'dein.vim': {'lazy': 0, 'repo': '/home/caseinna/.cache/dein/repos/github.com/Shougo/dein.vim/', 'name': 'dein.vim', 'rtp': '/home/caseinna/.cache/dein/repos/github.com/Shougo/dein.vim', 'normalized_name': 'dein', 'type': 'git', 'local': 1, 'merged': 0, 'sourced': 1, 'path': '/home/caseinna/.cache/dein/repos/github.com/Shougo/dein.vim'}, 'vim-lsp': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/prabirshrestha/vim-lsp', 'path': '/home/caseinna/.cache/dein/repos/github.com/prabirshrestha/vim-lsp', 'repo': 'prabirshrestha/vim-lsp', 'normalized_name': 'lsp', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'vim-lsp'}, 'nerdtree': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/scrooloose/nerdtree', 'path': '/home/caseinna/.cache/dein/repos/github.com/scrooloose/nerdtree', 'repo': 'scrooloose/nerdtree', 'normalized_name': 'nerdtree', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'nerdtree'}, 'emmet-vim': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/mattn/emmet-vim', 'path': '/home/caseinna/.cache/dein/repos/github.com/mattn/emmet-vim', 'repo': 'mattn/emmet-vim', 'normalized_name': 'emmet', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'emmet-vim'}, 'async.vim': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/prabirshrestha/async.vim', 'path': '/home/caseinna/.cache/dein/repos/github.com/prabirshrestha/async.vim', 'repo': 'prabirshrestha/async.vim', 'normalized_name': 'async', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'async.vim'}, 'dein-ui.vim': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/wsdjeg/dein-ui.vim', 'path': '/home/caseinna/.cache/dein/repos/github.com/wsdjeg/dein-ui.vim', 'repo': 'wsdjeg/dein-ui.vim', 'normalized_name': 'dein-ui', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'dein-ui.vim'}, 'vim-vue': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/posva/vim-vue', 'path': '/home/caseinna/.cache/dein/repos/github.com/posva/vim-vue', 'repo': 'posva/vim-vue', 'normalized_name': 'vue', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'vim-vue'}, 'vim-latex': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/vim-latex/vim-latex', 'path': '/home/caseinna/.cache/dein/repos/github.com/vim-latex/vim-latex', 'repo': 'vim-latex/vim-latex', 'normalized_name': 'latex', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'vim-latex'}}
+dein#name              
+Imap_UsePlaceHolders  #1
+ctags_command          ctags -R .
+paste#paste_cmd       {'v': '"-c<Esc>:call paste#Paste()<CR>', 'i': '^\^O"+gP', 'n': ':call paste#Paste()<CR>'}
+ycm_auto_trigger      #1
+ycm_global_ycm_extra_conf  ${HOME}/.ycm_extra_conf.py
+Tex_CompileRule_pdf    lualatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*
+dein#_vimrcs          ['/home/caseinna/.config/nvim/init.vim']
+ft_ignore_pat          \.\(Z\|gz\|bz2\|zip\|tgz\)$
+dein#_hook_add         
+plugins               {'molokai': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/tomasr/molokai', 'path': '/home/caseinna/.cache/dein/repos/github.com/tomasr/molokai', 'repo': 'tomasr/molokai', 'normalized_name': 'molokai', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'molokai'}, 'dein.vim': {'lazy': 0, 'repo': '/home/caseinna/.cache/dein/repos/github.com/Shougo/dein.vim/', 'name': 'dein.vim', 'rtp': '/home/caseinna/.cache/dein/repos/github.com/Shougo/dein.vim', 'normalized_name': 'dein', 'type': 'git', 'local': 1, 'merged': 0, 'sourced': 1, 'path': '/home/caseinna/.cache/dein/repos/github.com/Shougo/dein.vim'}, 'vim-lsp': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/prabirshrestha/vim-lsp', 'path': '/home/caseinna/.cache/dein/repos/github.com/prabirshrestha/vim-lsp', 'repo': 'prabirshrestha/vim-lsp', 'normalized_name': 'lsp', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'vim-lsp'}, 'nerdtree': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/scrooloose/nerdtree', 'path': '/home/caseinna/.cache/dein/repos/github.com/scrooloose/nerdtree', 'repo': 'scrooloose/nerdtree', 'normalized_name': 'nerdtree', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'nerdtree'}, 'emmet-vim': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/mattn/emmet-vim', 'path': '/home/caseinna/.cache/dein/repos/github.com/mattn/emmet-vim', 'repo': 'mattn/emmet-vim', 'normalized_name': 'emmet', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'emmet-vim'}, 'async.vim': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/prabirshrestha/async.vim', 'path': '/home/caseinna/.cache/dein/repos/github.com/prabirshrestha/async.vim', 'repo': 'prabirshrestha/async.vim', 'normalized_name': 'async', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'async.vim'}, 'dein-ui.vim': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/wsdjeg/dein-ui.vim', 'path': '/home/caseinna/.cache/dein/repos/github.com/wsdjeg/dein-ui.vim', 'repo': 'wsdjeg/dein-ui.vim', 'normalized_name': 'dein-ui', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'dein-ui.vim'}, 'vim-vue': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/posva/vim-vue', 'path': '/home/caseinna/.cache/dein/repos/github.com/posva/vim-vue', 'repo': 'posva/vim-vue', 'normalized_name': 'vue', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'vim-vue'}, 'vim-latex': {'lazy': 0, 'rtp': '/home/caseinna/.cache/dein/repos/github.com/vim-latex/vim-latex', 'path': '/home/caseinna/.cache/dein/repos/github.com/vim-latex/vim-latex', 'repo': 'vim-latex/vim-latex', 'normalized_name': 'latex', 'type': 'git', 'merged': 1, 'sourced': 1, 'name': 'vim-latex'}}
+winids                []
+dein#_merged_format    {'repo': v:val.repo, 'rev': get(v:val, 'rev', '')}
+dein#_cache_version   #150
+b:changedtick         #2571
+v:stderr              #2
+v:beval_winid         #0
+v:version             #800
+v:t_list              #3
+v:beval_winnr         #0
+v:errors              []
+v:lnum                #0
+v:hlsearch            #1
+v:oldfiles            []
+v:dying               #0
+v:windowid            #0
+v:mouse_winid         #0
+v:exiting              v:null
+v:lang                 ja_JP.UTF-8
+v:count               #0
+v:progpath             /usr/bin/nvim
+v:true                 v:true
+v:t_string            #1
+v:progname             nvim
+v:t_bool              #6
+v:t_number            #0
+v:_null_dict          {}
+v:vim_did_enter       #0
+v:cmdbang             #0
+v:foldlevel           #0
+v:msgpack_types       {'float': [], 'array': [], 'binary': [], 'integer': [], 'nil': [], 'boolean': [], 'ext': [], 'map': [], 'string': []}
+v:t_func              #2
+v:ctype                ja_JP.UTF-8
+v:prevcount           #0
+v:register             "
+v:mouse_win           #0
+v:count1              #1
+v:foldstart           #0
+v:foldend             #0
+v:_null_list          []
+v:profiling           #0
+v:t_float             #5
+v:null                 v:null
+v:beval_col           #0
+v:errmsg               E169: コマンドが再帰的過ぎます
+v:beval_lnum          #0
+v:mouse_lnum          #0
+v:completed_item      {}
+v:t_dict              #4
+v:false                v:false
+v:beval_bufnr         #0
+v:shell_error         #0
+v:testing             #0
+v:servername           /tmp/nvimoG9ita/0
+v:lc_time              ja_JP.UTF-8
+v:searchforward       #1
+v:event               {}
+v:mouse_col           #0
+v:statusmsg            短縮入力は見つかりませんでした
+v:warningmsg           W10: 警告: 読込専用ファイルを変更します

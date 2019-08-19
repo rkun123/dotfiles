@@ -4,32 +4,33 @@ set tabstop=4
 set autoindent
 set smartindent
 
-" For dein.vim
-
-if &compatible
-  set nocompatible
+"---FOR Vim-Plug---
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'Shougo/neocomplete.vim'
+Plug 'posva/vim-vue'
+Plug 'mattn/emmet-vim'
+if !has('nvim')
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
 endif
-" Add the dein installation directory into runtimepath
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+Plug 'wsdjeg/dein-ui.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tomasr/molokai'
+Plug 'vim-latex/vim-latex'
+"call dein#add('prabirshrestha/async.vim'
+"call dein#add('prabirshrestha/vim-lsp'
+Plug 'neoclide/coc.nvim', {'branch':'release', 'do':{-> coc#util#install()}}
+Plug 'dense-analysis/ale'
+Plug 'itchyny/lightline.vim'
 
-if dein#load_state('~/.cache/dein')
-  call dein#begin('~/.cache/dein')
 
-  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('Shougo/neocomplete.vim')
-  call dein#add('posva/vim-vue')
-  if !has('nvim')
-    call dein#add('roxma/nvim-yarp')
-    call dein#add('roxma/vim-hug-neovim-rpc')
-  endif
-  call dein#add('wsdjeg/dein-ui.vim')
-  call dein#add('scrooloose/nerdtree')
-  call dein#add('tomasr/molokai')
+call plug#end()
 
-  call dein#end()
-  call dein#save_state()
-endif
+"---FOR Vim-Plug---
+
 
 filetype plugin indent on
 syntax enable
@@ -42,14 +43,45 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-" For YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '${HOME}/.ycm_extra_conf.py'
-let g:ycm_auto_trigger = 1
-let g:ycm_min_num_of_chars_for_completion = 3
-let g:ycm_autoclose_preview_window_after_insertion = 1
-set splitbelow
-"
-" Use deoplete.
-let g:deoplete#enable_at_startup = 1
+" Buffers
+noremap <C-S-h> bprev
+noremap <C-S-l> bnext
 
-autocmd BufRead,BufNewFile *.ts set filetype=typescript
+" Use deoplete.
+"let g:deoplete#enable_at_startup = 1
+
+"autocmd BufRead,BufNewFile *.ts set filetype=typescript
+
+""
+"" Vim-LaTeX
+""
+filetype plugin on
+filetype indent on
+set shellslash
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+let g:Imap_UsePlaceHolders = 1
+let g:Imap_DeleteEmptyPlaceHolders = 1
+let g:Imap_StickyPlaceHolders = 0
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='dvi,pdf'
+let g:Tex_FormatDependency_pdf = 'pdf'
+"let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+"let g:Tex_CompileRule_pdf = 'ptex2pdf -u -l -ot "-synctex=1 -interaction=nonstopmode -file-line-error-style" $*'
+let g:Tex_CompileRule_pdf = 'lualatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+"let g:Tex_CompileRule_dvi = 'uplatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+let g:Tex_BibtexFlavor = 'upbibtex'
+let g:Tex_MakeIndexFlavor = 'upmendex $*.idx'
+let g:Tex_UseEditorSettingInDVIViewer = 1
+let g:Tex_ViewRule_pdf = 'xdg-open'
+"let g:Tex_ViewRule_pdf = 'evince'
+"let g:Tex_ViewRule_pdf = 'okular --unique'
+"let g:Tex_ViewRule_pdf = 'zathura -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
+"let g:Tex_ViewRule_pdf = 'qpdfview --unique'
+"let g:Tex_ViewRule_pdf = 'texworks'
+"let g:Tex_ViewRule_pdf = 'mupdf'
+"let g:Tex_ViewRule_pdf = 'firefox -new-window'
+"let g:Tex_ViewRule_pdf = 'chromium --new-window'
+
+
+"autocmd BufWrite *.go term++hidden "gofmt -w %:p"
