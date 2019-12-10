@@ -1,12 +1,13 @@
-LANG=C
+# LANG=en_US.UTF-8
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 #
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
 
 alias vim="nvim"
+alias vi="nvim"
 alias v="nvim"
 alias :e="nvim"
 
@@ -25,6 +26,10 @@ alias gps="git push"
 alias gpsh="git push origin HEAD"
 alias gss="git stash"
 alias gbl="git blame"
+alias gd="git diff"
+
+alias java12="/usr/lib/jvm/java-12-openjdk/bin/java"
+alias java12c="/usr/lib/jvm/java-12-openjdk/bin/javac"
 
 export KYUTECHID=182C1114
 export PATH=/home/caseinna/.kyutools/bin:$PATH
@@ -37,6 +42,13 @@ export NVM_DIR="$HOME/.nvm"
 
 # zplug
 source $HOME/.zplug/init.zsh
-zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+# zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+zplug "sindresorhus/pure"
 
 zplug load
+
+export GOPATH=$HOME/go
+
+export PATH=$GOPATH/bin:$PATH
+export GO111MODULE=on
+
