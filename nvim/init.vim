@@ -4,6 +4,8 @@ set tabstop=4
 set autoindent
 set smartindent
 
+set clipboard+=unnamedplus
+
 "---FOR Vim-Plug---
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -19,6 +21,7 @@ endif
 Plug 'wsdjeg/dein-ui.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tomasr/molokai'
+Plug 'dracula/vim'
 Plug 'vim-latex/vim-latex'
 "call dein#add('prabirshrestha/async.vim'
 "call dein#add('prabirshrestha/vim-lsp'
@@ -35,7 +38,7 @@ call plug#end()
 filetype plugin indent on
 syntax enable
 " Finish for dein.vim
-colorscheme molokai
+colorscheme dracula
 
 " Mappings
 noremap <C-h> <C-w>h
@@ -46,6 +49,8 @@ noremap <C-l> <C-w>l
 " Buffers
 noremap <C-S-h> bprev
 noremap <C-S-l> bnext
+" Term
+tnoremap <Esc> <C-\><C-n>
 
 " Use deoplete.
 "let g:deoplete#enable_at_startup = 1
