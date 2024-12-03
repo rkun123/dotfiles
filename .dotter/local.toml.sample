@@ -1,0 +1,7 @@
+packages = [
+  "zsh",
+  "tmux",
+  "wezterm",
+  "starship",
+  "neovim"
+]
