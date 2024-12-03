@@ -1,0 +1,9 @@
+[symlinks]
+"starship.toml" = "/Users/rkun/.config/starship.toml"
+"tmux.conf" = "/Users/rkun/.tmux.conf"
+"wezterm.lua" = "/Users/rkun/.config/wezterm/wezterm.lua"
+"zsh/zprofile" = "/Users/rkun/.zprofile"
+"zsh/zshrc" = "/Users/rkun/.zshrc"
+
+[templates]
+vimrc = "/Users/rkun/.config/nvim/init.vim"

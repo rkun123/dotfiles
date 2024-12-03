@@ -1,0 +1,4 @@
+[i3.files]
+i3 = "~/.config/i3/config"
+"polybar/config" = "~/.config/polybar/config"
+"polybar/launcher.sh" = "~/.config/polybar/launcher.sh"
