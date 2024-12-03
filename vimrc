@@ -12,7 +12,7 @@ set clipboard+=unnamedplus
 
 syntax enable
 
-colorscheme dracula
+colorscheme default
 
 " Mappings
 noremap <C-h> <C-w>h
