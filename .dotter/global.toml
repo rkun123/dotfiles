@@ -16,3 +16,6 @@
 
 [neovim.files]
 "vimrc" = { target = "~/.config/nvim/init.vim", type = "template", if = '(is_executable "nvim")'}
+
+[hyper.files]
+"hyper.js" = "~/.hyper.js"
