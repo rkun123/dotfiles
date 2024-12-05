@@ -8,6 +8,7 @@ local function font_with_fallback(name, params)
 end
 
 return {
+	audible_bell = "Disabled", 
 	-- window
 	window_decorations = "INTEGRATED_BUTTONS|RESIZE",
 	window_background_opacity = .9,
