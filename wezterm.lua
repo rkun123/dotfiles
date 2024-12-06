@@ -3,7 +3,7 @@
 local wezterm = require 'wezterm'
 
 local function font_with_fallback(name, params)
-	local names = { name, "Noto Color Emoji", "FiraCode Nerd Font" }
+	local names = { name, "Noto Color Emoji", "Noto Sans JP", "FiraCode Nerd Font" }
 	return wezterm.font_with_fallback(names, params)
 end
 
@@ -52,7 +52,7 @@ return {
 		{ key="w",  mods="SUPER", action=wezterm.action{ CloseCurrentPane={confirm=true} } },
 	},
 
-	font = font_with_fallback("FiraCode Nerd Font"),
+	font = font_with_fallback("RobotoMono Nerd Font"),
 	font_size = 18.0
 }
 
