@@ -1,6 +1,6 @@
 [zsh.files]
 "zsh/zprofile" = "~/.zprofile"
-"zsh/zshrc" = "~/.zshrc"
+"zsh/zshrc.tmpl" = { target = "~/.zshrc", type = "template" }
 
 [tmux.files]
 "tmux.conf" = "~/.tmux.conf"
