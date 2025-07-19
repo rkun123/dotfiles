@@ -37,6 +37,11 @@ alias fzf="fzf --bind=ctrl-k:kill-line"
 
 alias cdtemp="cd $(mktemp -d)"
 
+{{#if (is_executable "starship")}}
+# starship
+eval "$(starship init zsh)"
+{{/if}}
+
 # ghq
 alias repo=". {{dotter.current_dir}}/tools/repo.sh"
 # alias repo='cd $(ghq list | fzf --layout reverse --tmux right,50% --preview "bat --color=always --style=numbers ~/ghq/{}/README.*" --preview-window "~3" | xargs -I {} echo ~/ghq/{})'
