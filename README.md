@@ -1,18 +1,31 @@
 # dotfiles
 
-## Setup dotter
+This repository is managed with `chezmoi`.
 
-### 1. Install dotter
+## Setup
 
-Download and place dotter to `bin/dotter`.
-You can checkout this [Official Instruction](https://github.com/SuperCuber/dotter?tab=readme-ov-file#installation).
+### 1. Install chezmoi
 
-### 2. Setup local.toml
+Follow the [official installation instructions](https://www.chezmoi.io/install/).
 
-Duplicate `.dotter/local.toml.sample`, And edit for your new machine.
+### 2. Apply this repository
 
-### 3. Apply dotfiles to your machine with dotter
+From a fresh machine:
 
 ```sh
-./bin/dotter
+chezmoi init --apply https://github.com/rkun123/dotfiles.git
+```
+
+If you cloned the repository locally first, you can also apply it from the checkout:
+
+```sh
+chezmoi init --apply /path/to/this/repository
+```
+
+### 3. Edit files through chezmoi
+
+Use `chezmoi edit` or modify the source state directly in this repository, then run:
+
+```sh
+chezmoi apply
 ```
