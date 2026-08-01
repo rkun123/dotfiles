@@ -1,0 +1,82 @@
+# LANG=en_US.UTF-8
+export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.bin:/usr/local/bin:$PATH
+
+
+{{ if lookPath "nvim" -}}
+export EDITOR=nvim
+export VISUAL=nvim
+
+alias vim="nvim"
+alias vi="nvim"
+alias v="nvim"
+alias :e="nvim"
+{{ end -}}
+
+alias c="cd"
+alias l="ls"
+alias sl="ls"
+alias lsal="ls -al"
+alias yrmr="yes | rm -r"
+alias rmr="rm -r"
+alias cpr="cp -r"
+
+{{ if lookPath "git" -}}
+alias gst="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gps="git push"
+alias gpsh="git push origin HEAD"
+alias gsw="git switch"
+alias gss="git stash"
+alias gbl="git blame"
+alias gd="git diff"
+alias gfp="git fetch -p"
+{{ end -}}
+
+{{ if lookPath "cocker" -}}
+alias dcco="docker compose"
+{{ end -}}
+
+alias sl="ls"
+alias :e="vim"
+alias lsal="ls -al"
+
+alias cdtemp="cd $(mktemp -d)"
+
+{{ if lookPath "agent" -}}
+alias cursor="agent"
+{{ end -}}
+
+{{ if lookPath "lazygit" -}}
+alias lg="lazygit"
+{{ end -}}
+
+{{ if lookPath "devcontainer" -}}
+alias dc="devcontainer"
+alias dcx="devcontainer exec"
+{{ end -}}
+
+{{ if lookPath "starship" -}}
+eval "$(starship init zsh)"
+{{ end -}}
+
+{{ if lookPath "fzf" -}}
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias fzf="fzf --bind=ctrl-k:kill-line"
+
+{{ if lookPath "ghq" -}}
+repo() {
+  . "{{ .chezmoi.sourceDir }}/tools/repo.sh"
+}
+{{ end -}}
+{{ end -}}
+
+# load local .zshrc
+if [ -f "$HOME/.zshrc.local" ]; then
+    source "$HOME/.zshrc.local"
+fi
+
+# ----- Move lines added below to ~/.zshrc.local -----
+
+
