@@ -1,5 +1,7 @@
 {{/* リポジトリ管理用ファイル (ホームには適用しない) */}}
 README.md
+AGENTS.md
+.cursor
 tools
 polybar
 

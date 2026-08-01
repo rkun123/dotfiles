@@ -1,0 +1,40 @@
+---
+description: chezmoi の Go template と .chezmoiignore の書き方
+globs: "**/*.tmpl,.chezmoiignore"
+alwaysApply: false
+---
+
+# Templates / .chezmoiignore
+
+既存パターンを踏襲すること。独自 DSL を増やさない。
+
+## lookPath 分岐（.tmpl）
+
+```go-template
+{{ if lookPath "nvim" -}}
+export EDITOR=nvim
+{{ end -}}
+```
+
+- 余分な空行を抑えるため `{{-` / `-}}` の trim を使う
+- コマンド依存の alias / PATH / eval は必ず `lookPath` で囲む
+
+## ファイル単位の除外（.chezmoiignore）
+
+```go-template
+{{- if not (lookPath "tmux") }}
+.tmux.conf
+{{- end }}
+
+{{- if or (ne .chezmoi.os "linux") (not (lookPath "i3")) }}
+.config/i3
+{{- end }}
+```
+
+- ignore 側のパスは**ターゲット名**（`.tmux.conf`, `.config/i3`）で書く
+- リポジトリ専用ファイルは条件なしで列挙する（例: `README.md`, `AGENTS.md`, `.cursor`）
+
+## やってはいけないこと
+
+- template 構文をコメントアウトしたまま残す
+- OS / コマンド条件なしで Linux 専用設定を全マシンへ適用する
