@@ -1,0 +1,16 @@
+---
+description: chezmoi dotfiles リポジトリ全体の前提
+alwaysApply: true
+---
+
+# chezmoi dotfiles
+
+このリポジトリは chezmoi のソース状態である。詳細はルートの `AGENTS.md` を正本とする。
+
+## 必須
+
+- 編集対象はリポジトリ内のソース（`dot_*`, `dot_config/` など）。`$HOME` だけを直接いじらない
+- 反映前に `chezmoi diff`、必要なら `chezmoi apply -n` で確認する
+- 秘密情報・マシン固有値は commit しない。zsh のローカル設定は `~/.zshrc.local`
+- リポジトリ管理用ファイル（`AGENTS.md`, `.cursor/` など）は `.chezmoiignore` に載せ、ホームへ出さない
+- 依頼範囲外のリファクタや無関係な整形をしない

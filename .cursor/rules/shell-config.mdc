@@ -1,0 +1,30 @@
+---
+description: zsh / shell 設定の慣習
+globs: "**/dot_zshrc*,**/dot_zprofile*,**/*.sh"
+alwaysApply: false
+---
+
+# Shell config
+
+## 配置
+
+- 共通設定: `dot_zshrc.tmpl` / `dot_zprofile`
+- マシン固有: `~/.zshrc.local`（リポジトリに入れない。`dot_zshrc.tmpl` が source する）
+- 補助スクリプト: `tools/`（ホームへは適用されない）
+
+## 書き方
+
+```go-template
+{{ if lookPath "git" -}}
+alias gst="git status"
+{{ end -}}
+```
+
+- 外部コマンドに依存する alias / 初期化は `lookPath` でガードする
+- PATH や EDITOR など共通の環境変数だけをソースに置く
+- 個人用トークンやホスト固有パスは `~/.zshrc.local` へ
+
+## スクリプト
+
+- `tools/*.sh` は zsh 前提の補助ツールとして扱う
+- shebang と既存の呼び出し方（例: `dot_zshrc.tmpl` からの source）を壊さない

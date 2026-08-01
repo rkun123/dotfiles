@@ -2,6 +2,8 @@
 
 This repository is managed with `chezmoi`.
 
+AI agents should follow [`AGENTS.md`](AGENTS.md).
+
 ## Setup
 
 ### 1. Install chezmoi
