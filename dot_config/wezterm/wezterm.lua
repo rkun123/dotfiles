@@ -1,5 +1,3 @@
-{{- if lookPath "wezterm" -}}
-
 local wezterm = require 'wezterm'
 
 local function font_with_fallback(name, params)
@@ -55,6 +53,3 @@ return {
 	font = font_with_fallback("Roboto Mono"),
 	font_size = 18.0
 }
-
-{{- end -}}
-

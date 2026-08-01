@@ -1,5 +1,3 @@
-{{- if lookPath "nvim" -}}
-
 " Indents
 set number
 set shiftwidth=2
@@ -147,5 +145,3 @@ require("lazy").setup({
 
 })
 EOF
-
-{{- end }}
